@@ -9,9 +9,16 @@ html{
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--heading);
-    color:var(--hover);
+    color:var(--hover);  
 
 }
+#particles-js{
+    position : absolute;
+    width:80%;
+    height:790vh;
+    z-index:-1;
+}
+
 :root {
     --heading:rgba(0,0,0,0.9); 
     --background-color:rgb(16,180,240);
@@ -19,6 +26,7 @@ body{
     --list:blue;
     
 }
+
 td,th{
     color:var(--hover);
 }
@@ -80,6 +88,7 @@ li{
     padding-bottom:0px;
     margin-bottom:0px; 
    
+   
 } 
     #home_1{
         float:left;
@@ -122,11 +131,14 @@ li{
  /* -----------------------------------------about-section-----------------------------*/  
 
 .about{
+    position: relative;
     float:left;
     width: 100%;
     padding-top:80px;
     padding-bottom:0px;
     margin-bottom:0px; 
+    z-index:1;
+   
 }
 #h2{
     text-align: center;
@@ -168,7 +180,8 @@ li{
     width:100%;
     padding-top:80px;
     padding-bottom:0px;
-    margin-bottom:0px;   
+    margin-bottom:0px; 
+   
 }
  /* --------------------------------experience-section-------------------------------------*/  
 .experience{
@@ -201,19 +214,25 @@ li{
     padding-bottom:0px;
     margin-bottom:0px; 
 }
+#project_1,#project_2,#project_3{
+    float:left;
+}
  /* ---------------------------------contact-section------------------------------------------*/  
 .contact{
     float:left;
     width:100%;
-    padding-top:80px;
+    padding-top:40px;
     padding-bottom:0px;
     margin-bottom:0px; 
     
 }
-#contact_1,#contact_2{
+#contact_1,#contact_2,#contact_3{
     float:left;
-    padding-left:160px;
+    padding-left:20px;
 
+}
+form{
+    padding:10px 10px 10px 0px;
 }
 
 /* ---------------------------------footer-section------------------------------------------*/  
