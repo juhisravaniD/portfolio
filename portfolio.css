@@ -10,12 +10,18 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--heading);
     color:var(--hover);  
+    background-image: url("imgs/img2.jpeg");
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow-x:hidden;
+
 
 }
 #particles-js{
     position : absolute;
-    width:80%;
-    height:700vh;
+    width:100%;
+    height:600vh;
     z-index:-1;
 }
 
@@ -23,13 +29,17 @@ body{
     --heading:rgba(0,0,0,0.9); 
     --background-color:rgb(16,180,240);
     --hover:white;
-    --list:blue;
+    --list:rgb(65, 65, 241);
+    --division:#ff3838;
     
 }
 
 td,th{
     color:var(--hover);
 }
+/* table:hover{
+    background-color: var(--division);
+} */
 /*-------------------\
     Table of Content
 \--------------------/
@@ -47,15 +57,19 @@ td,th{
 
 
 /*---------------------------------------NAV-BAR----------------------------------------*/
-
+#FirstLetter{
+    color:var(--division);
+}
 .navbar-light .navbar-nav .nav-link {
-    color: var(--list);
+    color: var(--division);
     /* color: rgba(0,0,0,0.7); */
 }
 
 .navbar-brand{
     padding-left:50px;
     margin-left: 55px;
+    color:var(--hover)!important;
+   
 }
 
 li{
@@ -104,6 +118,7 @@ li{
         color:var(--background-color);
         cursor: pointer;
         transition: 0.5s;
+        margin-bottom:0px ;
     }
     h1:hover{
         color:var(--hover);
@@ -131,6 +146,7 @@ li{
  /* -----------------------------------------about-section-----------------------------*/  
 
 .about{
+
     position: relative;
     float:left;
     width: 100%;
@@ -145,6 +161,7 @@ li{
     color:var(--heading);
     background-color: var(--background-color);
    
+   
 }
 #h2:hover{
     color:var(--hover);
@@ -152,7 +169,7 @@ li{
 }
 #p3{
     text-align: justify; 
-    margin:5px;
+    margin:5px auto;
     padding:30px 0px 0px 0px;
 }
 #h3{
@@ -164,7 +181,7 @@ li{
 }
 #h3:hover{
     padding-left:30px ;
-    color:var(--list);
+    color:var(--division);
 }
 
 #about_1,#about_2{
@@ -178,11 +195,13 @@ li{
 .education{
     float:left;
     width:100%;
-    padding-top:80px;
+    padding-top:80px; 
     padding-bottom:0px;
-    margin-bottom:0px; 
+    margin-bottom:0px;
+    
    
 }
+
  /* --------------------------------experience-section-------------------------------------*/  
 .experience{
     float:left;
@@ -222,20 +241,28 @@ li{
 }
  /* ---------------------------------contact-section------------------------------------------*/  
 .contact{
+    
     float:left;
     width:100%;
     padding-top:40px;
     padding-bottom:0px;
     margin-bottom:0px; 
     
+    
 }
-#contact_1,#contact_2,#contact_3{
+#contact_1,#contact_2{
     float:left;
     padding-left:20px;
-
+    
+}
+#contact_3{
+    float:left;
+    padding-left:20px;
+    background-color: var(--division);
 }
 form{
     padding:10px 10px 10px 0px;
+    margin-top:0;
 }
 
 /* ---------------------------------footer-section------------------------------------------*/  
@@ -259,10 +286,14 @@ form{
     width:100%;
     text-align: center;
 }
+.imgs{
+    float:left;
+    
+}
 @media screen and (max-width:960px){
     #particles-js{
         position : absolute;
-        width:80%;
+        width:100%;
         height:1300vh;
         z-index:-1;
     }
@@ -272,4 +303,21 @@ form{
          text-align: center;
          color:var(--hover);
      }
+     body{
+         overflow-x: hidden;
+         padding-left:10px;
+     }
+     #home1{
+         padding:20px auto;
+     }
+     #home1{
+        padding:20px auto;
+    }
+    #about-left{
+        padding: 0 auto;
+        margin:0 auto;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        text-align: center;
+    }
 }
